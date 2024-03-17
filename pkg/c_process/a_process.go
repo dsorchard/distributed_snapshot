@@ -16,7 +16,7 @@ func CreateProcess(processId int, network []models.ProcessInfo, taskList []model
 	processInfo := network[processId]
 	fmt.Println(fmt.Sprintf("Creating process: %v, in port: %v", processInfo.Name, processInfo.Port))
 
-	// local task. randomly incrementing amount
+	// local timer task (just incr. amount) + processMessageIn task
 	updateStateChan := make(chan models.ProcessEvent)
 
 	// network task (appTask, snapTask)

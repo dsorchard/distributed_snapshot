@@ -80,6 +80,7 @@ func (sm *StateManager) UpdateState() {
 					sm.Logger.Snapshot.Println(sm.Snapshots[len(sm.Snapshots)-1])
 				}
 			} else {
+				// TODO: should it be broadcast here?
 				sm.pendingMarks = 1 //TODO: understand more clear.
 				// I think this is the case when no snapshot is being taken and the node
 				// starts taking a snapshot. In this case, the node should wait for the

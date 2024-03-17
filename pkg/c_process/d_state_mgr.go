@@ -67,13 +67,13 @@ func (sm *StateManager) UpdateState() {
 			}
 		case extraDelay := <-sm.SaveGlobalState:
 			if !sm.takingSnapshot { // if it's already taking a snapshot just ignore it
-				sm.pendingMarks = 2
+				sm.pendingMarks = 2 // The number of nodes in the system - 1 (since we don't need to wait for the current node)
 				sm.TakeSnapshot(extraDelay)
 			}
 		case MarkMsg := <-sm.MarkMessageIn:
 			sm.Logger.Mark.Println(MarkMsg)
 			if sm.takingSnapshot {
-				sm.pendingMarks -= 1 //TODO: understand more clear.
+				sm.pendingMarks -= 1 // update the number of pending marks
 				if sm.pendingMarks == 0 {
 					sm.takingSnapshot = false
 					sm.Logger.GoVectLog("Finish taking the snapshot")
@@ -81,6 +81,9 @@ func (sm *StateManager) UpdateState() {
 				}
 			} else {
 				sm.pendingMarks = 1 //TODO: understand more clear.
+				// I think this is the case when no snapshot is being taken and the node
+				// starts taking a snapshot. In this case, the node should wait for the
+				// other nodes to mark the message before it can finish taking the snapshot.
 				sm.TakeSnapshot(100)
 			}
 		}

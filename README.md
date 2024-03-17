@@ -29,3 +29,8 @@ GoVector --log_type shiviz --log_dir /Users/arjunsunilkumar/GolandProjects/0sysd
 4. Input would look like this
 
 ![Shiviz Input](misc/shiviz2.png)
+
+### Pending Task
+- Revisit Advanced OS slides
+- Watch the [videos](https://www.youtube.com/watch?v=x1BCZ351dJk&list=PLJlBfw5j7ib80iSF9-BxhHqTXIQQFSXdw)
+- Make the concept more clear with an example and counter example.

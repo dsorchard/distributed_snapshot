@@ -16,19 +16,21 @@ func CreateProcess(processId int, network []models.ProcessInfo, taskList []model
 	processInfo := network[processId]
 	fmt.Println(fmt.Sprintf("Creating process: %v, in port: %v", processInfo.Name, processInfo.Port))
 
+	// local task. randomly incrementing amount
+	updateStateChan := make(chan models.ProcessEvent)
+
+	// network task (appTask, snapTask)
 	processMessageIn := make(chan models.Message)
 	processMessageOut := make(chan models.Message)
-
 	markMessageIn := make(chan models.Message)
+	saveGlobalState := make(chan int)
 	markMessageOut := make(chan int)
 
-	updateStateChan := make(chan models.ProcessEvent)
-	saveGlobalState := make(chan int)
 	logger := helpers.CreateLogger(processInfo.Name)
 
-	thisJob := CreateJob(processInfo, network, updateStateChan, processMessageIn, processMessageOut, taskList, saveGlobalState, quit)
-
 	thisCommunicationMod := CreateCommunicationModule(processId, network, processMessageIn, processMessageOut, markMessageIn, markMessageOut, logger)
+
+	thisJob := CreateJob(processInfo, network, updateStateChan, processMessageIn, processMessageOut, taskList, saveGlobalState, quit)
 
 	thisStateManager := CreateStateManager(processId, updateStateChan, saveGlobalState, markMessageIn, markMessageOut, logger)
 

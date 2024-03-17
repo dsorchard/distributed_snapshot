@@ -33,5 +33,5 @@ GoVector --log_type shiviz --log_dir /Users/arjunsunilkumar/GolandProjects/0sysd
 ### Pending Task
 - Revisit Advanced OS slides
 - Watch the [videos](https://www.youtube.com/watch?v=x1BCZ351dJk&list=PLJlBfw5j7ib80iSF9-BxhHqTXIQQFSXdw)
-- Make the concept more clear with an example and counter example.
-- I think some more correctness verification is needed. Also need to make it generic for any number of processes.
+- Make the concept clearer with an example and counterexample.
+- I think some more correctness verification is needed. Also, need to make it generic for any number of processes.

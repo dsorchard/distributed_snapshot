@@ -8,6 +8,15 @@ Chandy Lamport Algorithm.
 
 ### Vector Clock Trace
 
-> TODO: Find out how to merge the logs into a single file and use the regular expression required by Shiviz.
-
 ![Vector Clock Trace](misc/shiviz.png)
+
+### Command To Generate Shiviz Log
+
+1. Run the following to generate the log file
+```shell
+go install github.com/DistributedClocks/GoVector
+
+GoVector --log_type shiviz --log_dir /Users/arjunsunilkumar/GolandProjects/0sysdev_dec/chandy-lamport-go/govector --outfile final.log
+```
+
+2. 

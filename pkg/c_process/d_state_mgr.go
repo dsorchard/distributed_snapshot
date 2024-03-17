@@ -80,11 +80,10 @@ func (sm *StateManager) UpdateState() {
 					sm.Logger.Snapshot.Println(sm.Snapshots[len(sm.Snapshots)-1])
 				}
 			} else {
-				// TODO: should it be broadcast here?
+				// NOTE:
+				// 1. there is a broadcast happening from TakeSnapshot() via MarkMessageOut
+				// 2. pendingMarks=1 is a hack to say, mark Ckj as empty. Not sure.
 				sm.pendingMarks = 1 //TODO: understand more clear.
-				// I think this is the case when no snapshot is being taken and the node
-				// starts taking a snapshot. In this case, the node should wait for the
-				// other nodes to mark the message before it can finish taking the snapshot.
 				sm.TakeSnapshot(100)
 			}
 		}

@@ -1,0 +1,30 @@
+P1	EVENT: 		02:46:14 {AppMsg Receive 5 from P0, balance 72}
+P1	EVENT: 		02:46:15 {Increase one. New amount: 73}
+P1	EVENT: 		02:46:17 {Increase one. New amount: 74}
+P1	EVENT: 		02:46:18 {AppMsg Receive 5 from P2, balance 79}
+P1	EVENT: 		02:46:18 {AppMsg Send 10 to P0, balance 69}
+P1	EVENT: 		02:46:33 {AppMsg Receive 5 from P0, balance 94}
+P1	EVENT: 		02:46:34 {Increase one. New amount: 95}
+P1	EVENT: 		02:46:36 {Increase one. New amount: 96}
+P1	EVENT: 		02:46:36 {AppMsg Receive 5 from P2, balance 101}
+P1	EVENT: 		02:46:37 {AppMsg Send 10 to P0, balance 91}
+P1	EVENT: 		02:46:38 {Increase one. New amount: 92}
+P1	MARK: 		02:46:39 {P0 P1 MarkMsg 2500 0}
+P1	MARK: 		02:46:39 Start taking the snapshot
+P1	EVENT: 		02:46:40 {Increase one. New amount: 93}
+P1	MARK: 		02:46:40 {P2 P1 MarkMsg 1100 0}
+P1	SNAPSHOT: 	02:46:40 {{6 [{Init } {AppMsg Receive 5 from P0, balance 94} {Increase one. New amount: 95} {Increase one. New amount: 96} {AppMsg Receive 5 from P2, balance 101} {AppMsg Send 10 to P0, balance 91} {Increase one. New amount: 92}]} [] []}
+P1	EVENT: 		02:46:42 {Increase one. New amount: 94}
+P1	EVENT: 		02:46:44 {Increase one. New amount: 95}
+P1	EVENT: 		02:46:44 {AppMsg Send 5 to P2, balance 90}
+P1	EVENT: 		02:46:46 {Increase one. New amount: 91}
+P1	MARK: 		02:46:46 {P2 P1 MarkMsg 1500 0}
+P1	MARK: 		02:46:46 Start taking the snapshot
+P1	EVENT: 		02:46:48 {Increase one. New amount: 92}
+P1	MARK: 		02:46:49 {P0 P1 MarkMsg 1600 0}
+P1	SNAPSHOT: 	02:46:49 {{11 [{Init } {AppMsg Receive 5 from P0, balance 94} {Increase one. New amount: 95} {Increase one. New amount: 96} {AppMsg Receive 5 from P2, balance 101} {AppMsg Send 10 to P0, balance 91} {Increase one. New amount: 92} {Increase one. New amount: 93} {Increase one. New amount: 94} {Increase one. New amount: 95} {AppMsg Send 5 to P2, balance 90} {Increase one. New amount: 91}]} [] []}
+P1	EVENT: 		02:46:50 {Increase one. New amount: 93}
+P1	EVENT: 		02:46:50 {AppMsg Send 5 to P0, balance 88}
+P1	EVENT: 		02:46:52 {Increase one. New amount: 89}
+P1	EVENT: 		02:46:53 {AppMsg Receive 5 from P2, balance 94}
+P1	EVENT: 		02:46:54 {Increase one. New amount: 95}

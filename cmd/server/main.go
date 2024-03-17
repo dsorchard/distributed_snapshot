@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	// Obtain process data
 	args := os.Args[1:]
 	processId := args[0]
 	fileName := args[1]

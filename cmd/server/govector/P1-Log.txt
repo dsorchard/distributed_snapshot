@@ -1,0 +1,72 @@
+1710668792362035000 P1 {"P1":1}
+Initialization Complete
+1710668792864757000 P1 {"P0":3, "P1":2}
+INFO Receive
+1710668793366143000 P1 {"P0":3, "P1":3}
+INFO [AppMsg] Receive 5 from P0, balance 94
+1710668794363335000 P1 {"P0":3, "P1":4}
+INFO [Increase one.] New amount: 95
+1710668796363637000 P1 {"P0":3, "P1":5}
+INFO [Increase one.] New amount: 96
+1710668796376886000 P1 {"P0":3, "P1":6, "P2":4}
+INFO Receive
+1710668796878165000 P1 {"P0":3, "P1":7, "P2":4}
+INFO [AppMsg] Receive 5 from P2, balance 101
+1710668796878412000 P1 {"P0":8, "P1":8, "P2":4}
+INFO Receive
+1710668797363642000 P1 {"P0":8, "P1":9, "P2":4}
+INFO [AppMsg] Send 10 to P0, balance 91
+1710668797364049000 P1 {"P0":8, "P1":10, "P2":4}
+INFO Send
+1710668798363495000 P1 {"P0":8, "P1":11, "P2":4}
+INFO [Increase one.] New amount: 92
+1710668799379885000 P1 {"P0":8, "P1":12, "P2":4}
+INFO Start taking the snapshot
+1710668799380911000 P1 {"P0":8, "P1":13, "P2":4}
+INFO Send
+1710668799381267000 P1 {"P0":8, "P1":14, "P2":4}
+INFO Send
+1710668799868185000 P1 {"P0":9, "P1":15, "P2":10}
+INFO Receive
+1710668800363193000 P1 {"P0":9, "P1":16, "P2":10}
+INFO [Increase one.] New amount: 93
+1710668800968940000 P1 {"P0":9, "P1":17, "P2":10}
+INFO Finish taking the snapshot
+1710668802363467000 P1 {"P0":9, "P1":18, "P2":10}
+INFO [Increase one.] New amount: 94
+1710668804363481000 P1 {"P0":9, "P1":19, "P2":10}
+INFO [Increase one.] New amount: 95
+1710668804363805000 P1 {"P0":9, "P1":20, "P2":10}
+INFO [AppMsg] Send 5 to P2, balance 90
+1710668804364079000 P1 {"P0":9, "P1":21, "P2":10}
+INFO Send
+1710668805379721000 P1 {"P0":15, "P1":22, "P2":23}
+INFO Receive
+1710668806363648000 P1 {"P0":15, "P1":23, "P2":23}
+INFO [Increase one.] New amount: 91
+1710668806880914000 P1 {"P0":15, "P1":24, "P2":23}
+INFO Start taking the snapshot
+1710668806881678000 P1 {"P0":15, "P1":25, "P2":23}
+INFO Send
+1710668806881958000 P1 {"P0":15, "P1":26, "P2":23}
+INFO Send
+1710668807881770000 P1 {"P0":29, "P1":27, "P2":23}
+INFO Receive
+1710668808363466000 P1 {"P0":29, "P1":28, "P2":23}
+INFO [Increase one.] New amount: 92
+1710668809482976000 P1 {"P0":29, "P1":29, "P2":23}
+INFO Finish taking the snapshot
+1710668810363044000 P1 {"P0":29, "P1":30, "P2":23}
+INFO [Increase one.] New amount: 93
+1710668810364098000 P1 {"P0":29, "P1":31, "P2":23}
+INFO [AppMsg] Send 5 to P0, balance 88
+1710668810364527000 P1 {"P0":29, "P1":32, "P2":23}
+INFO Send
+1710668812363630000 P1 {"P0":29, "P1":33, "P2":23}
+INFO [Increase one.] New amount: 89
+1710668813381610000 P1 {"P0":30, "P1":34, "P2":36}
+INFO Receive
+1710668813482991000 P1 {"P0":30, "P1":35, "P2":36}
+INFO [AppMsg] Receive 5 from P2, balance 94
+1710668814362971000 P1 {"P0":30, "P1":36, "P2":36}
+INFO [Increase one.] New amount: 95

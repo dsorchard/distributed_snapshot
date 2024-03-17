@@ -1,0 +1,31 @@
+P0	EVENT: 		02:46:14 {AppMsg Send 5 to P1, balance 52}
+P0	EVENT: 		02:46:14 {Increase one. New amount: 53}
+P0	EVENT: 		02:46:16 {Increase one. New amount: 54}
+P0	EVENT: 		02:46:18 {Increase one. New amount: 55}
+P0	MARK: 		02:46:18 Start taking the snapshot
+P0	EVENT: 		02:46:32 {AppMsg Send 5 to P1, balance 56}
+P0	EVENT: 		02:46:32 {Increase one. New amount: 57}
+P0	EVENT: 		02:46:34 {Increase one. New amount: 58}
+P0	MARK: 		02:46:36 Start taking the snapshot
+P0	EVENT: 		02:46:36 {Increase one. New amount: 59}
+P0	EVENT: 		02:46:37 {AppMsg Receive 10 from P1, balance 69}
+P0	EVENT: 		02:46:38 {Increase one. New amount: 70}
+P0	EVENT: 		02:46:40 {Increase one. New amount: 71}
+P0	EVENT: 		02:46:40 {AppMsg Send 5 to P2, balance 66}
+P0	MARK: 		02:46:40 {P1 P0 MarkMsg 1600 0}
+P0	EVENT: 		02:46:42 {Increase one. New amount: 67}
+P0	MARK: 		02:46:43 {P2 P0 MarkMsg 2100 0}
+P0	SNAPSHOT: 	02:46:43 {{3 [{Init } {AppMsg Send 5 to P1, balance 56} {Increase one. New amount: 57} {Increase one. New amount: 58}]} [{AppMsg Receive 10 from P1, balance 69}] [{AppMsg Send 5 to P2, balance 66}]}
+P0	EVENT: 		02:46:43 {AppMsg Receive 5 from P2, balance 72}
+P0	EVENT: 		02:46:44 {Increase one. New amount: 73}
+P0	EVENT: 		02:46:46 {Increase one. New amount: 74}
+P0	EVENT: 		02:46:47 {AppMsg Send 5 to P2, balance 69}
+P0	MARK: 		02:46:47 {P2 P0 MarkMsg 2500 0}
+P0	MARK: 		02:46:47 Start taking the snapshot
+P0	EVENT: 		02:46:48 {Increase one. New amount: 70}
+P0	MARK: 		02:46:49 {P1 P0 MarkMsg 1600 0}
+P0	SNAPSHOT: 	02:46:49 {{11 [{Init } {AppMsg Send 5 to P1, balance 56} {Increase one. New amount: 57} {Increase one. New amount: 58} {Increase one. New amount: 59} {Increase one. New amount: 70} {Increase one. New amount: 71} {Increase one. New amount: 67} {AppMsg Receive 5 from P2, balance 72} {Increase one. New amount: 73} {Increase one. New amount: 74} {AppMsg Send 5 to P2, balance 69}]} [] []}
+P0	EVENT: 		02:46:49 {AppMsg Receive 5 from P2, balance 75}
+P0	EVENT: 		02:46:50 {AppMsg Receive 5 from P1, balance 80}
+P0	EVENT: 		02:46:50 {Increase one. New amount: 81}
+P0	EVENT: 		02:46:52 {Increase one. New amount: 82}

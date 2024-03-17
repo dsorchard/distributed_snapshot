@@ -1,0 +1,29 @@
+P2	EVENT: 		02:46:17 {AppMsg Send 5 to P1, balance 49}
+P2	EVENT: 		02:46:17 {Increase one. New amount: 50}
+P2	EVENT: 		02:46:36 {AppMsg Send 5 to P1, balance 93}
+P2	EVENT: 		02:46:36 {Increase one. New amount: 94}
+P2	EVENT: 		02:46:38 {Increase one. New amount: 95}
+P2	MARK: 		02:46:39 {P0 P2 MarkMsg 3000 0}
+P2	MARK: 		02:46:39 Start taking the snapshot
+P2	EVENT: 		02:46:40 {Increase one. New amount: 96}
+P2	MARK: 		02:46:40 {P1 P2 MarkMsg 1100 0}
+P2	SNAPSHOT: 	02:46:40 {{3 [{Init } {AppMsg Send 5 to P1, balance 93} {Increase one. New amount: 94} {Increase one. New amount: 95}]} [] []}
+P2	EVENT: 		02:46:41 {AppMsg Send 5 to P0, balance 91}
+P2	EVENT: 		02:46:41 {AppMsg Receive 5 from P0, balance 96}
+P2	EVENT: 		02:46:42 {Increase one. New amount: 97}
+P2	EVENT: 		02:46:44 {Increase one. New amount: 98}
+P2	EVENT: 		02:46:44 {AppMsg Receive 5 from P1, balance 103}
+P2	MARK: 		02:46:45 Start taking the snapshot
+P2	EVENT: 		02:46:46 {Increase one. New amount: 104}
+P2	EVENT: 		02:46:47 {AppMsg Send 5 to P0, balance 99}
+P2	MARK: 		02:46:47 {P1 P2 MarkMsg 1100 0}
+P2	EVENT: 		02:46:48 {AppMsg Receive 5 from P0, balance 104}
+P2	EVENT: 		02:46:48 {Increase one. New amount: 105}
+P2	MARK: 		02:46:50 {P0 P2 MarkMsg 2100 0}
+P2	SNAPSHOT: 	02:46:50 {{9 [{Init } {AppMsg Send 5 to P1, balance 93} {Increase one. New amount: 94} {Increase one. New amount: 95} {Increase one. New amount: 96} {AppMsg Send 5 to P0, balance 91} {AppMsg Receive 5 from P0, balance 96} {Increase one. New amount: 97} {Increase one. New amount: 98} {AppMsg Receive 5 from P1, balance 103}]} [{AppMsg Receive 5 from P0, balance 104}] [{AppMsg Send 5 to P0, balance 99}]}
+P2	EVENT: 		02:46:50 {Increase one. New amount: 106}
+P2	EVENT: 		02:46:52 {Increase one. New amount: 107}
+P2	EVENT: 		02:46:53 {AppMsg Send 5 to P1, balance 102}
+P2	EVENT: 		02:46:54 {Increase one. New amount: 103}
+P2	EVENT: 		02:46:56 {Increase one. New amount: 104}
+P2	EVENT: 		02:46:58 {Increase one. New amount: 105}

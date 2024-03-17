@@ -2,6 +2,7 @@
 
 - [acolyer](https://blog.acolyer.org/2015/04/22/distributed-snapshots-determining-global-states-of-distributed-systems/)
 - [medium](https://medium.com/big-data-processing/global-snapshot-chandy-lamport-algorithm-consistent-cut-ec85aa3e7c9d)
+- [Dikjstra's Manustript](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD864a.html)
 
 ### Core Ideas
 
